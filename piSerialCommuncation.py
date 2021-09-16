@@ -6,7 +6,7 @@ if __name__ == '__main__':
     ser.flush()
     idx = 0
     while True:
-        sendString = "Hello from Raspberry Pi! " + idx + "\n"
+        sendString = "Hello from Raspberry Pi! " + str(idx_ + "\n"
         ser.write(sendString.encode('utf-8'))
         line = ser.readline().decode('utf-8').rstrip()
         print(line)
